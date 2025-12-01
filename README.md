@@ -1,1 +1,1 @@
-Prediction bot project with render.yaml
+Free version: no cron, no workers. Manual predictions only.
