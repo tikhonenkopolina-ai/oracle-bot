@@ -1,9 +1,8 @@
-
 services:
   - type: worker
     name: oracle-bot
     env: python
-    plan: free
+    plan: starter
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python bot.py"
     autoDeploy: true
@@ -11,7 +10,7 @@ services:
   - type: cron
     name: oracle-bot-cron
     env: python
-    plan: free
+    plan: starter
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python scheduler.py"
     schedule: "0 6 * * *"
